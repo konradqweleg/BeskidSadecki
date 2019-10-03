@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
+section{
+    &#firstPhoto{
+        height:100vh;
+        width:100%;
+        background-image: url("../img/tlo.jpg");
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        vertical-align: flex-start;
+
+
+
+        ul{
+            display:flex;
+            justify-content: space-between;
+            width:50vw;
+
+            margin-top:30px;
+            list-style-type:none;
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 30px;
+            color:white;
+
+            li{
+
+                cursor: pointer;
+                &::after{
+                    content:"";
+                    height:2px;
+                    display: block;
+                    width:0%;
+                    background-color:white;
+
+
+                }
+
+                &:hover{
+
+                    &::after{
+                        width:100%;
+                        transition: width 1.5s;
+                    }
+                }
+
+
+            }
+
+
+
+        }
+
+
+
+    }
+
+
+}
